@@ -1,0 +1,119 @@
+/* Card Container */
+.em-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 12px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid #f0f0f0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Floating Animation on Hover */
+.em-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(19, 37, 232, 0.12);
+  border-color: rgba(143, 16, 183, 0.2);
+}
+
+/* Image Wrapper with Soft Background */
+.em-card-img-wrapper {
+  background-color: #f8f9fc;
+  border-radius: 15px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.em-card-img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.em-card:hover .em-card-img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Elegant Badge */
+.em-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #1325e8, #8f10b7);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+/* Typography */
+.em-card-body {
+  padding: 15px 10px 5px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.em-product-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  height: 2.8rem;
+  overflow: hidden;
+  display: -webkit-box;
+  
+  -webkit-box-orient: vertical;
+}
+
+/* Modern Price Row */
+.em-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.em-price-label {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.em-price-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1325e8;
+  margin: 0;
+}
+
+/* Hidden-to-Visible Button */
+.btn-em-primary {
+  width: 100%;
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.em-card:hover .btn-em-primary {
+  background: linear-gradient(to right, #e81313, #b77d10);
+  box-shadow: 0 4px 15px rgba(19, 37, 232, 0.4);
+}

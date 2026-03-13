@@ -1,0 +1,21 @@
+<div class="product-grid-item">
+  <div class="em-card">
+    <div class="em-card-img-wrapper">
+      <span class="em-badge">New</span>
+      <img [src]="product.image" class="em-card-img" [alt]="product.title">
+    </div>
+    
+    <div class="em-card-body">
+      <h5 class="em-product-title">{{ product.title }}</h5>
+      
+      <div class="em-price-row">
+        <span class="em-price-label">Price</span>
+        <p class="em-price-value">${{ product.price }}</p>
+      </div>
+      
+      <div class="em-card-actions">
+        <a href="#" class="btn-em-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>

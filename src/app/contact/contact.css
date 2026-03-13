@@ -1,0 +1,129 @@
+/* Page Wrapper */
+.em-contact-page {
+  padding: 100px 5%;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: #121212;
+}
+
+.em-contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* Typography & Info Side */
+.em-subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #666;
+  font-weight: 700;
+}
+
+.em-contact-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.em-contact-desc {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+.em-info-item {
+  margin-bottom: 30px;
+}
+
+.em-info-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.em-info-link, .em-info-text {
+  font-size: 1.1rem;
+  color: #121212;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.em-info-link:hover {
+  text-decoration: underline;
+}
+
+/* Form Styling */
+.em-contact-form-wrapper {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.em-input-group {
+  margin-bottom: 20px;
+}
+
+.em-input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.em-input-group input, 
+.em-input-group select, 
+.em-input-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.em-input-group input:focus, 
+.em-input-group textarea:focus {
+  border-color: #121212;
+}
+
+/* The Black-to-Grey Gradient Button */
+.em-submit-btn {
+  width: 100%;
+  background-color: #121212;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.em-submit-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 850px) {
+  .em-contact-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .em-contact-title {
+    font-size: 2.2rem;
+  }
+}

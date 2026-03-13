@@ -1,0 +1,52 @@
+/* Custom Accordion Styling for Easy Mart */
+.accordion {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.accordion-item {
+    border: none !important;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: #2d3436;
+    padding: 20px;
+    background: #fff !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
+
+/* When the accordion is open */
+.accordion-button:not(.collapsed) {
+    color: #1325e8; /* Matches your brand blue */
+    background: rgba(19, 37, 232, 0.03) !important;
+}
+
+/* Custom Icon Color (the little arrow) */
+.accordion-button::after {
+    filter: grayscale(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: none; /* Shows original color when expanded */
+}
+
+.accordion-body {
+    padding: 25px;
+    line-height: 1.7;
+    color: #636e72;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Highlighting key info in the body */
+.accordion-body strong {
+    color: #8f10b7; /* Matches your brand purple */
+}
