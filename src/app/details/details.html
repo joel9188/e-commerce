@@ -1,0 +1,79 @@
+<div class="container mt-5">
+  <div class="row gx-5">
+    
+    <div class="col-md-6 mb-4">
+      <div class="card border-0 shadow-sm">
+        <img src='{{ product.image }}' class="img-fluid rounded shadow-sm" alt="Product Large View">
+        <div class="d-flex justify-content-start mt-3 gap-2">
+          <img src="c.webp" class="img-thumbnail" style="width: 80px; cursor: pointer;" alt="thumb">
+          <img src="c.webp" class="img-thumbnail opacity-50" style="width: 80px; cursor: pointer;" alt="thumb">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2">
+          <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Courses</a></li>
+          <li class="breadcrumb-item active">{{ product.title }}</li>
+        </ol>
+      </nav>
+
+      <h1 class="display-5 fw-bold mb-2">{{ product.name }}</h1>
+      
+      <div class="d-flex align-items-center mb-3">
+        <div class="text-warning me-2">
+          <i class="bi bi-star-fill">★</i>
+          <i class="bi bi-star-fill">★</i>
+          <i class="bi bi-star-fill">★</i>
+          <i class="bi bi-star-fill">★</i>
+          <i class="bi bi-star-half">☆</i>
+        </div>
+        <span class="text-muted fs-6">(1,240 Reviews) | 5k+ Enrolled</span>
+      </div>
+
+      <hr class="my-4">
+
+      <div class="pricing-card p-3 bg-light rounded-3 mb-4">
+        <div class="d-flex align-items-center">
+          <span class="h2 fw-bold text-primary mb-0">${{ product.price }}</span>
+          <span class="text-decoration-line-through text-muted ms-3 fs-5">$120.00</span>
+          <span class="badge bg-danger ms-auto">Save 60%</span>
+        </div>
+        <p class="text-success fw-bold small mt-1">
+          <i class="bi bi-tag-fill"></i> Easy Mart Early Bird Offer!
+        </p>
+        
+        <ul class="list-unstyled mt-3 small text-muted">
+          <li>✅ Lifetime Access</li>
+          <li>✅ Certificate of Completion</li>
+          <li>✅ 30-Day Money Back Guarantee</li>
+        </ul>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex">
+        <button class="btn btn-primary btn-lg px-5 py-3 fw-bold flex-grow-1" type="button">Enroll Now</button>
+        <button class="btn btn-outline-secondary btn-lg px-4" type="button">
+          <i class="bi bi-heart">❤️</i>
+        </button>
+      </div>
+
+      <div class="mt-5">
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" type="button">Details</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" type="button">Syllabus</button>
+          </li>
+        </ul>
+        <div class="tab-content p-3 border border-top-0 rounded-bottom">
+          <div class="tab-pane fade show active pt-2">
+            <p>{{ product.description }}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

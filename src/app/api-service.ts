@@ -9,4 +9,7 @@ export class ApiService {
  getProducts() {
   return this.http.get('https://fakestoreapi.com/products');
 }
+getProductDetails(id:number ) {
+  return this.http.get(`https://fakestoreapi.com/products/${id}`);
+}
 }
